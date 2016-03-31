@@ -1,9 +1,12 @@
 package com.tiger.learn.mybatis.sample.model;
 
+import java.io.Serializable;
+
 /**
  * @author xuerhu (mailto:xueh@primeton.com)
  */
-public class User {
+public class User implements Serializable{
+
     public String getId() {
         return id;
     }

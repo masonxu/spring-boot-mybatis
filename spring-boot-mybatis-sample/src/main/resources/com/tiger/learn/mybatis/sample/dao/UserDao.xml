@@ -1,0 +1,32 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tiger.learn.mybatis.sample.dao.UserDao">
+    <resultMap id="User" type="com.tiger.learn.mybatis.sample.model.User">
+        <id column="id" property="id"/>
+        <result column="user_name" property="username"/>
+        <result column="password" property="password"/>
+    </resultMap>
+
+
+    <select id="getAll" resultMap="User">
+        SELECT
+        u.id, u.user_name, u.password
+        FROM platform_user u
+    </select>
+
+    <select id="getById" resultMap="User">
+        SELECT
+        u.id, u.user_name, u.password
+        FROM platform_user u
+        WHERE u.id = #{id}
+    </select>
+
+
+    <insert id="insertUser" parameterType="User">
+        INSERT INTO platform_user (
+        id, user_name, password
+        ) VALUES (
+        #{id}, #{username}, #{password}
+        )
+    </insert>
+
+</mapper>

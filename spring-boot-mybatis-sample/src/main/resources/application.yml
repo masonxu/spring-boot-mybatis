@@ -1,5 +1,11 @@
-server:
-    port:8080
+# Server settings  
+server:  
+    port:9090
 
-db:
-  url: http://lll
+# DATASOURCE  
+jdbc:  
+    driverClass: com.mysql.jdbc.Driver  
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    maxPoolSize: 20
