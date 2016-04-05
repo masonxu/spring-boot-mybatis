@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group name="server">
+        <property name="server.port" defaultValue="8080" description="日志输出目录" />
+    </group>
+
+    <group name="jdbc">
+        <property name="jdbc.url" defaultValue="jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8" description="数据库连接字符串" />
+        <property name="jdbc.username" defaultValue="root" description="数据库用户名" />
+        <property name="jdbc.password" defaultValue="root" description="数据库连接密码加密密钥" />
+        <property name="jdbc.maxPoolSize" defaultValue="20" description="数据库连接池大小" />
+    </group>
+
+    <group name="sample">
+        <property name="sample.log.path" defaultValue="log" description="log路径" />
+        <property name="sample.log.level" defaultValue="info" description="log级别" />
+    </group>
+
+    <script>
+        <generate template="application.template" destfile="application.yml"/>
+        <generate template="logback.template" destfile="logback.xml"/>
+    </script>
+</config>

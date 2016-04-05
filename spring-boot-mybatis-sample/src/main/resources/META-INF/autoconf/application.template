@@ -1,0 +1,11 @@
+# Server settings
+server:
+    port: ${server.port}
+
+# DATASOURCE
+jdbc:
+    driverClass: com.mysql.jdbc.Driver
+    url: ${jdbc.url}
+    username: ${jdbc.username}
+    password: ${jdbc.password}
+    maxPoolSize: ${jdbc.maxPoolSize}

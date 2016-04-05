@@ -1,6 +1,6 @@
 # Server settings  
 server:  
-    port:9090
+    port: 8080
 
 # DATASOURCE  
 jdbc:  
