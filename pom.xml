@@ -4,7 +4,7 @@
 
     <groupId>com.tiger.learn</groupId>
     <artifactId>spring-boot-mybatis</artifactId>
-    <version>1.0.11</version>
+    <version>1.0.12-SNAPSHOT</version>
     <modules>
         <module>spring-boot-mybatis-sample</module>
     </modules>
@@ -62,7 +62,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/masonxu/spring-boot-mybatis.git</connection>
-        <tag>v1.0.11</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
